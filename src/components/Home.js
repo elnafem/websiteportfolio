@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Headshot from '../Assets/HeadShot.png';
-import DMCLogo from '../Assets/ITCommittee.png'; // Correct spelling
+import DMCLogo from '../Assets/ITCommittee.png'; 
+import AboutMe from '../Assets/AboutPicture.jpg';
+import Headshot2 from '../Assets/HeadShot2.jpg';
+import GroupPic from '../Assets/GroupPic.jpg';
 
 export default function Home() {
   return (
@@ -26,7 +29,7 @@ export default function Home() {
     <section className="about-section">
       <div className="about-image">
         <img
-          src={Headshot}
+          src={AboutMe}
           alt="Mohamed Profile"
           className="about-headshot"
         />
@@ -56,7 +59,9 @@ export default function Home() {
       {/* Skills Section */}
 
       {/* Technical Skills Section */}
+     
       <section className="skills-section2">
+        <div className="skills-section_content">
         <h2 className="text-xl md:text-2xl font-semibold mb-2">Technical Skills 🛠️</h2>
         <ul className="text-gray-600 text-sm md:text-base space-y-2">
           <li>⚡ React.js & Next.js</li>
@@ -67,10 +72,27 @@ export default function Home() {
           <li>⚡ Git & GitHub</li>
           <li>⚡ REST APIs & GraphQL</li>
         </ul>
+        </div>
+
+        <div className="skills-section_image">
+          <img
+            src={Headshot2}
+            alt="Mohamed Profile"
+            className="about-headshot"
+        />
+        </div>
       </section>
 
       {/* Non-Technical Skills Section */}
       <section className="skills-section">
+      <div className="skills-section2_image">
+          <img
+            src={GroupPic}
+            alt="Mohamed Profile"
+            className="about-headshot"
+        />
+        </div>
+        <div className="skills-section_content">
         <h2 className="text-xl md:text-2xl font-semibold mb-2">Non-Technical Skills 🌟</h2>
         <ul className="text-gray-600 text-sm md:text-base space-y-2">
           <li>✅ Problem Solving</li>
@@ -79,6 +101,7 @@ export default function Home() {
           <li>✅ Public Speaking</li>
           <li>✅ Time Management & Organization</li>
         </ul>
+        </div>
       </section>
 
        {/* Logo Image */}
