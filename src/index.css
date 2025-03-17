@@ -1,13 +1,151 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background: linear-gradient(135deg, #FFD700, #000000);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  padding: 20px;
+  background-color: #0E0E0E;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+
+}
+
+nav a {
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.container {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.about-section {
+  margin-top: 40px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  color: #000000;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%; /* Ensures full-width for alignment */
+}
+
+.logo img {
+  width: 500px; /* Adjust this size as needed */
+  height: auto;
+  margin-left: 0; /* Ensures it's all the way to the left */
+}
+
+.skills-section {
+
+
+  margin-top: 40px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  color: #000000;
+}
+
+.skills-section2 {
+
+  
+    margin-top: 40px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    color: #000000;
+}
+
+
+/* Profile & Intro Container */
+.profile-container {
+  display: flex;
+  flex-direction: column; /* Stacks items on mobile */
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center; /* Centers text on small screens */
+}
+
+/* Apply row layout on larger screens */
+@media (min-width: 768px) {
+  .profile-container {
+    flex-direction: row; /* Side by side layout */
+    align-items: flex-start; /* Align to top */
+    text-align: left; /* Align text to the left */
+  }
+}
+
+/* Profile Image Styling */
+.profile-image {
+  width: 200px; /* Small size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #000000; /* Black border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+/* Introduction Section */
+.intro-text {
+  max-width: 500px;
+}
+
+.intro-text h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f9f9f9; /* Tailwind Blue */
+}
+
+.intro-text p {
+  font-size: 18px;
+  color: #ffffff; /* Tailwind Gray-700 */
+  margin-top: 8px;
+}
+.about-section{
+  margin-top: 40px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  color: #000000;
+  display: flex;
+  flex-direction:  row; /* Aligns items in a row */
+  justify-content: space-between; /* Space between items */
 }
